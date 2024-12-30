@@ -1,91 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Under Construction</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f4f4f9, #d9e4f5);
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      color: #555;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 1rem;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    .Linkedin {
-      background-color: #0077b5;
-    }
-
-    .Google-Scholar {
-      background-color: #4285f4;
-    }
-
-    .Resume {
-      background-color: #f39c12;
-    }
-
-    .Github {
-      background-color: #333;
-    }
-
-    .social-links a:hover {
-      opacity: 0.9;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmik's Portfolio</title>
+    <link rel="stylesheet" href="landing.css">
+    <!-- Google Fonts Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap">
 </head>
 <body>
-  <h1>Portfolio Under Construction</h1>
-  <p>Thank you for visiting! We're working on something awesome. Meanwhile, you can connect with me through these platforms:</p>
-  
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/dharmiknaicker/" target="_blank" class="Linkedin">LinkedIn</a>
-    <a href="https://scholar.google.com/citations?user=VE6uNWAAAAAJ&hl=en" target="_blank" class="Google-Scholar">Google Scholar</a>
-    <a href="https://drive.google.com/file/d/1V_XvbB7jdYGsdiRvvLbL6vSTbxdQZk2l/view" target="_blank" class="Resume">Resume</a>
-    <a href="https://github.com/not-dharmik" target="_blank" class="Github">GitHub</a>
-  </div>
-  
-  <footer>
-    &copy; 2024 Dharmik Naicker | All Rights Reserved
-  </footer>
-</body>
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <!-- <div class="logo">
+            <a href="file:///Users/not.dharmik/Desktop/Portfolio/Try/landing.html">Dharmik</a>
+        </div> -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.pdf" target="_blank" class="resume-btn">Resume</a></li>
+        </ul>
+    </header>
+    
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="intro">
+            <p id="hello-text">Hello!</p>
+            <h1 id="intro-heading">I'm <span id="dynamic-text">Dharmik</span></h1>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me-section">
+        <div class="container about-me-content">
+            <!-- Left Side: About Me Text -->
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    By nature, I’m someone who genuinely loves helping others. I find immense joy in going out of my way to support people, whether it’s offering solutions, sharing ideas, or just lending a listening ear. Conversations fuel my curiosity—I love talking to people, understanding their perspectives, and learning about their unique journeys.
+                </p>
+                <p>
+                    Interestingly, my analytical mindset often turns these interactions into a fun challenge. I unconsciously build a model in my mind about people, piecing together patterns from what I know about them. It’s like solving a real-world data problem, where I predict their preferences or thoughts and then test my hypothesis by asking the right questions.
+                </p>
+                <p>
+                    Beyond data and logic, I immerse myself in hobbies that bring joy and balance to my life. I enjoy playing football (American soccer), working out, organizing spaces—it’s my way of finding order and creativity in the everyday. I also love sketching, which allows me to express myself artistically and unwind. Experiencing new adventures excites me, whether it’s trying a new activity or discovering something unfamiliar.
+                </p>
+                <p>
+                    And, of course, there’s my love for sneakers—a passion that merges style, culture, and a bit of self-expression. After all, can one ever have enough sneakers?
+                </p>
+            </div>
+
+            <!-- Right Side: Image Columns with Loop Effect -->
+            <div class="image-loop-container">
+                <div class="column column-1">
+                    <img src="Photos/dog.jpg" alt="A casual photo of me">
+                    <img src="Photos/UCI1.jpg" alt="Sneakers">
+                    <img src="Photos/VIT1.jpeg" alt="Sketching">
+                    <img src="Photos/dog.jpg" alt="A casual photo of me">
+                    <img src="Photos/UCI1.jpg" alt="Sneakers">
+                    <img src="Photos/VIT1.jpeg" alt="Sketching">
+                </div>
+                <div class="column column-2">
+                    <img src="Photos/dog1.jpg" alt="Cooking">
+                    <img src="Photos/UCI2.jpg" alt="Football">
+                    <img src="Photos/VIT2.jpg" alt="A casual photo of me">
+                    <img src="Photos/dog1.jpg" alt="Cooking">
+                    <img src="Photos/UCI2.jpg" alt="Football">
+                    <img src="Photos/VIT2.jpg" alt="A casual photo of me">
+                    
+                </div>
+                <div class="column column-3">
+                    <img src="Photos/dog.jpg" alt="A casual photo of me">
+                    <img src="Photos/UCI1.jpg" alt="Sneakers">
+                    <img src="Photos/VIT1.jpeg" alt="Sketching">
+                    <img src="Photos/dog.jpg" alt="A casual photo of me">
+                    <img src="Photos/UCI1.jpg" alt="Sneakers">
+                    <img src="Photos/VIT1.jpeg" alt="Sketching">
+                </div>
+            </div>
+        </div>
+    </section>        
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+
+        <!-- UCI Card -->
+        <div class="education-card">
+            <div class="education-info">
+                <h3>Master of Data Science</h3>
+                <p><strong>University:</strong> University of California, Irvine</p>
+                <p><strong>Expected Graduation:</strong> Sept 2024 - Current</p>
+                <p class="description">At the University of California, Irvine, I am pursuing my Master’s in Data Science. This program immerses me in advanced data science techniques, including machine learning, big data analytics, and statistical modeling, enabling me to refine my analytical skills. I am also exploring applications of data science in healthcare, an area that aligns with my passion for impactful technological innovation.</p>
+            </div>
+            <div class="education-pics">
+                <img src="Photos/UCI1.jpg" alt="UCI Picture 1">
+                <!-- <img src="Photos/UCI2.jpg" alt="UCI Picture 2"> -->
+            </div>
+        </div>
+
+        <!-- VIT Card -->
+        <div class="education-card">
+            <div class="education-info">
+                <h3>B.Tech in Computer Science</h3>
+                <p><strong>University:</strong> Vellore Institute of Technology, Vellore</p>
+                <p><strong>Graduation Year:</strong> 2020 - 2024</p>
+                <p><strong>GPA:</strong> 3.88/4.0</p>
+                <p class="description">I earned my B.Tech in Computer Science and Engineering at Vellore Institute of Technology (VIT), India. My academic journey here was marked by engagement with core subjects like data structures, database management, and natural language processing. As an active member of ACM-VIT, I contributed to several projects, notably one focused on the automatic segregation of wet and dry waste using computer vision. This practical application of classroom learning fueled my interest in real-world technological solutions and prepared me for advanced studies.</p>
+            </div>
+            <div class="education-pics">
+                <img src="Photos/VIT1.jpeg" alt="VIT Picture 1">
+                <!-- <img src="Photos/VIT2.jpg" alt="VIT Picture 2"> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="Photos/VIT1.jpeg" alt="Bus Capacity Predictor" class="project-image">
+                <h3>Bus Capacity Predictor</h3>
+                <p>A web app that uses CCTV footage and ML to predict bus capacity for better commuting experience.</p>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>Machine Learning</li>
+                    <li>Web Development</li>
+                </ul>
+                <a href="#" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="Photos/VIT2.jpg" alt="Hostel Assistance Platform" class="project-image">
+                <h3>Hostel Assistance Platform</h3>
+                <p>A user-friendly platform enabling students to register and manage hostel-related requests effortlessly.</p>
+                <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <a href="#" class="project-link" target="_blank">See Project</a> 
+            </div>
+            
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="Photos/UCI1.jpg" alt="Uci Image" class="project-image">
+                <h3>Data Visualization Dashboard</h3>
+                <p>An interactive sales dashboard for actionable business insights using SQL and Power BI jhadf jhsfgdj jhsdfagjdf.</p>
+                <ul class='tech-list' >
+                    <li>Power BI</li><!-- Add appropriate tech stack items -->
+                    <li>SQL</li><!-- Add appropriate tech stack items -->
+                    <li>SQL</li><!-- Add appropriate tech stack items -->
+                </ul><!-- Add appropriate tech stack items -->
+                <a href="#" class="project-link" target="_blank">See Project</a>
+            </div>
+            
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <img src="Photos/snake-game.jpeg" alt="Snake Game" class="project-image">
+                <h3>Snake Game</h3>
+                <p>Developed a classic snake game leveraging Python's OOP principles, modular programming, and the turtle graphics library. Incorporated real-time event handling with onkey, implemented collision detection for gameplay mechanics, and utilized custom classes for snake behavior, food spawning, and score management.<br><br></p>
+                <ul class='tech-list' >
+                    <li>Power BI</li><!-- Add appropriate tech stack items -->
+                    <li>SQL</li><!-- Add appropriate tech stack items -->
+                    <li>SQL</li><!-- Add appropriate tech stack items -->
+                </ul><!-- Add appropriate tech stack items -->
+                <a href="https://github.com/not-dharmik/Python-review/tree/main/Day-20-21-Snake_Game" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <img src="Photos/turtle-race.jpeg" alt="Turtle Race Game" class="project-image">
+                <h3>Turtle Race Game</h3>
+                <p>Created an engaging turtle race game using Python's turtle graphics and event-driven programming. Utilized the random module to simulate dynamic turtle movements and incorporated user interaction to predict the race winner. Demonstrates modular design and real-time position tracking for an exciting gameplay experience.</p>
+                <ul class='tech-list' >
+                    <li>Turtle Package</li>
+                    <li>Random Package</li>
+                </ul>
+                <a href="https://github.com/not-dharmik/Python-review/blob/main/Day-19/Turtle-Race.py" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+
+            <!-- Project Card 6-->
+            <div class="project-card">
+                <img src="Photos/turtle-crossing.jpeg" alt="Turtle Crossing Game" class="project-image">
+                <h3>Turtle Crossing Game</h3>
+                <p>Designed a dynamic turtle crossing game using Python's turtle graphics library. Implemented modular programming with custom classes for player movement, car generation, and scoring. Integrated collision detection and difficulty scaling to enhance gameplay. <br><br><br></p>
+                <ul class='tech-list' >
+                    <li>Turtle Graphic</li>
+                    <li>Detect Collision detection</li>
+                    <li>OOP</li>
+                </ul>
+                <a href="https://github.com/not-dharmik/Python-review/blob/main/Day23-CrossingGame/main.py" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+
+            <!-- Project Card 7-->
+            <div class="project-card">
+                <img src="Photos/us-quiz.jpeg" alt="U.S. States Quiz Game" class="project-image">
+                <h3>U.S. States Quiz Game</h3>
+                <p>Developed an interactive U.S. States quiz game using Python's turtle and pandas. The player guesses U.S. states, and correct answers are plotted on a map. Utilized CSV data to track states and their coordinates for visualization. <br><br><br> </p>
+                <ul class='tech-list' >
+                    <li>Turtle Graphic</li>
+                    <li>Pandas</li>
+                    <li>Interactive Mapping</li>
+                </ul>
+                <a href="https://github.com/not-dharmik/Python-review/tree/main/day-25-us-states-game-start" class="project-link" target="_blank">See Project</a> 
+            </div>
+            
+            
+            <!-- Project Card 8-->
+            <div class="project-card">
+                <img src="Photos/pomodoro.png" alt="Pomodoro Timer" class="project-image">
+                <h3>Pomodoro Timer Application</h3>
+                <p>Built a Pomodoro timer application using Python's tkinter for a simple and interactive user interface. Implemented functionality for work sessions, short breaks, and long breaks, with visual progress tracking via checkmarks. The countdown mechanism is handled using the after method for timed events.</p>
+                <ul class='tech-list' >
+                    <li>Tkinter</li>
+                    <li>GUI Development</li>
+                    <li>Time Management</li>
+                </ul>
+                <a href="https://github.com/not-dharmik/Python-review/blob/main/Day28-Pomodoro/main.py" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+
+            <!-- Project Card 9-->
+            <div class="project-card">
+                <img src="Photos/pwd-mngr.png" alt="Paasword Manager & Generator" class="project-image">
+                <h3>Paasword Manager & Generator</h3>
+                <p>Developed a password manager application using Python's tkinter for GUI, with features to generate, save, and retrieve passwords securely. Implemented JSON data storage for user credentials, including functionality to generate random passwords and show saved credentials for specific websites.</p>
+                <ul class='tech-list' >
+                    <li>Tkinter</li>
+                    <li>JSON Handling</li>
+                    <li>Password Generator</li>
+                </ul>
+                <a href="https://github.com/not-dharmik/Python-review/tree/main/Day30_Try_Catch" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+
+
+            <!-- Project Card 10-->
+            <div class="project-card">
+                <img src="Photos/flash-card.png" alt="Flash Card Learning Game" class="project-image">
+                <h3>Flash Card Learning Game</h3>
+                <p>Developed a flash card app for language learning using Python's tkinter for the user interface and pandas for data management. The app displays Spanish words and their English translations, allows users to mark known words, and saves progress to a CSV file.</p>
+                <ul class='tech-list' >
+                    <li>Tkinter</li>
+                    <li>Pandas</li>
+                </ul>
+                <a href="https://github.com/not-dharmik/Python-review/blob/main/Day31-FlashCard/main.py" class="project-link" target="_blank">See Project</a> 
+            </div>
+
+
+
+            <!-- Project Card 11-->
+            <!-- <div class="project-card">
+                <img src="Photos/pwd-mngr.png" alt="Paasword Manager & Generator" class="project-image">
+                <h3>Paasword Manager & Generator</h3>
+                <p>Developed a password manager application using Python's tkinter for GUI, with features to generate, save, and retrieve passwords securely. Implemented JSON data storage for user credentials, including functionality to generate random passwords and show saved credentials for specific websites.</p>
+                <ul class='tech-list' >
+                    <li>Tkinter</li>
+                    <li>JSON Handling</li>
+                    <li>Password Generator</li>
+                </ul>
+                <a href="" class="project-link" target="_blank">See Project</a> 
+            </div>  -->
+
+
+
+            <!-- Project Card 12-->
+            <!-- <div class="project-card">
+                <img src="Photos/pwd-mngr.png" alt="Paasword Manager & Generator" class="project-image">
+                <h3>Paasword Manager & Generator</h3>
+                <p>Developed a password manager application using Python's tkinter for GUI, with features to generate, save, and retrieve passwords securely. Implemented JSON data storage for user credentials, including functionality to generate random passwords and show saved credentials for specific websites.</p>
+                <ul class='tech-list' >
+                    <li>Tkinter</li>
+                    <li>JSON Handling</li>
+                    <li>Password Generator</li>
+                </ul>
+                <a href="" class="project-link" target="_blank">See Project</a> 
+            </div> -->
+
+
+
+
+        </div><!-- Close project container -->
+    </section><!-- Close projects section -->
+
+
+
+
+
+
+
+    <!-- Contact Me Section -->
+    <section id="contact-me" class="contact-me-section">
+        <h2>Get in Touch</h2>
+        <p>
+            Eager to connect? I'm all ears! Whether you're intrigued by my work, have a brilliant idea to share, or simply want to chat about the latest in tech, don't hesitate to drop me a line. I look forward to hearing from you and discovering the possibilities that lie ahead!
+        </p>
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:dnaicker@uci.edu">dnaicker@uci.edu</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dharmiknaicker/" target="_blank">linkedin.com/in/dharmiknaicker</a></p>
+            <p><strong>Linktr:</strong> <a href="https://linktr.ee/dharmiknaicker" target="_blank">linktr.ee/dharmiknaicker</a></p>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- JavaScript file reference -->
+    <script src='landing.js'></script><!-- Ensure this is at the end before closing body tag -->
+
+</body><!-- Close body tag -->
+
+<!-- Closing HTML tag -->
 </html>
