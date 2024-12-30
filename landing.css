@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: #89A8B2;
+    --secondary-color: #B3C8CF;
+    /* --background-color: #E5E1DA; */
+    --background-color: #E5E1DA;
+    --text-color: #333333;
+    --accent-color: #727168;
+    --white: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding-left: 10%;
+}
+
+.intro p {
+    font-size: 2rem;
+}
+
+.intro h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+#dynamic-text {
+    color: var(--accent-color);
+}
+
+/* About Me Section */
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 10%;
+    background-color: var(--white);
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.image-loop-container {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: scroll-loop 20s linear infinite;
+}
+
+.column-2 {
+    animation: scroll-loop-reverse 20s linear infinite;
+}
+
+.column img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Education Section */
+.education {
+    padding: 50px 10%;
+    background-color: var(--background-color);
+}
+
+.education h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.education-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.education-info {
+    flex: 2;
+    padding: 30px;
+}
+
+.education-pics {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.education-pics img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 10%;
+    background-color: var(--white);
+}
+
+.projects h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    color: var(--accent-color);
+    padding: 15px;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px 15px;
+    list-style: none;
+}
+
+.tech-list li {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.project-link {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--accent-color);
+}
+
+
+/* General Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Me Section */
+.contact-me-section {
+    padding: 50px 20px;
+    background-color: var(--white); /* Background uses secondary color */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me-section h2 {
+    font-size: 2em;
+    color: var(--text-color); /* Primary text color */
+    margin-bottom: 20px;
+}
+
+.contact-me-section p {
+    font-size: 1.2em;
+    color: var(--accent-color); /* Accent color for paragraph text */
+    line-height: 1.6;
+}
+
+.contact-details {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: var(--text-color); /* Text color for contact details */
+}
+
+.contact-details a {
+    color: var(--primary-color); /* Links use primary color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+    color: var(--accent-color); /* Hover effect with accent color */
+}
+
+
+
+@keyframes scroll-loop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+@keyframes scroll-loop-reverse {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .about-me-content, .education-card {
+        flex-direction: column;
+    }
+    .intro h1 {
+        font-size: 4rem;
+    }
+}
+
