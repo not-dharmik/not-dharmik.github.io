@@ -1,6 +1,6 @@
 
 // Array of dynamic text for transition
-const dynamicText = ["Dharmik","Web Developer", "Data Analyst", "Designer", "Enthusiast"];
+const dynamicText = ["Dharmik", "Web Developer", "Data Engineer", "Problem Solver", "Tech Enthusiast", "Lifelong Learner", "Collaborator"];
 let index = 0;
 let dynamicTextElement = document.getElementById("dynamic-text");
 
