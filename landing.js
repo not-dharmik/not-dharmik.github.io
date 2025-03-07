@@ -10,8 +10,8 @@ function changeText() {
     index = (index + 1) % dynamicText.length; // Loop back to the first text after the last one
 }
 
-// Change the text every 2 seconds
-setInterval(changeText, 1000);
+// Change the text every few seconds
+setInterval(changeText, 1500);
 
 // Sticky Navbar when scrolling
 window.onscroll = function() {
