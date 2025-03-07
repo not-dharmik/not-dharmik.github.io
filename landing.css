@@ -74,6 +74,14 @@ body {
     font-weight: 700;
 }
 
+#hello-text{
+    font-size: 3rem;
+}
+
+#my-name{
+    font-weight: 650;
+}
+
 #dynamic-text {
     color: var(--accent-color);
 }
